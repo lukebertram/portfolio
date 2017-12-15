@@ -10,13 +10,14 @@
   'base/typography';
 
 //COMPONENTS: buttons, scrollbars, garbagecans
-
+@import
+  'components/content-wrapper';
 
 //LAYOUT: styling for individual sections of the layout
 @import
   'layout/hero',
   'layout/nav',
-  'layout/content';
+  'layout/main-section';
 
 //PAGES
 
