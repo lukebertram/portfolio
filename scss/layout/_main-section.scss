@@ -9,7 +9,7 @@
     padding-bottom: $big-words-y-pad;
     flex-basis: 160px;
     flex-grow: 1;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
@@ -23,6 +23,7 @@
     flex-shrink: 1;
     align-items: center;
     padding-left: 1em;
+    padding-right: 1em;
     line-height: 1.3em;
   }
 }
