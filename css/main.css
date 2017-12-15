@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,6 +57,9 @@ body {
 
 .hero {
   background-color: #555;
+  background-image: url("../img/streetbattle.jpg");
+  background-size: cover;
+  background-position: 50% 30%;
   color: ivory;
   padding: 0.4em;
   height: calc(60vh - 0.4em * 2);
@@ -64,25 +68,40 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-top: 4vh; }
   .hero * {
     z-index: 2; }
-  .hero h2 {
-    font-size: 2.5em; }
+  .hero .descriptors {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; }
+    .hero .descriptors h2 {
+      font-size: 2.3em;
+      font-weight: 200;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 0.1333333333em; }
   .hero .name-display {
     align-self: flex-end;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end; }
     .hero .name-display h1 {
+      font-family: 'Fjalla One', sans-serif;
       text-transform: capitalize;
-      font-size: 4em; }
+      font-size: 10vh;
+      margin-top: -6vh; }
+      .hero .name-display h1:first-letter {
+        font-size: 1.7em;
+        font-weight: 300; }
   .hero:after {
     position: absolute;
     z-index: 1;
     content: '';
     height: 150vh;
-    width: 170vh;
+    width: 300vw;
     border-radius: 100%;
     background-color: rgba(130, 130, 130, 0.5);
     top: 1vh;
@@ -90,22 +109,26 @@ body {
 
 .main {
   background-color: #111;
-  height: 40vh;
+  height: 32vh;
   display: flex;
   padding: 0.4em; }
   .main .big-words {
-    flex-basis: 187px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    flex-basis: 160px;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end; }
     .main .big-words h1 {
-      font-size: 2em; }
+      font-size: 7vw; }
   .main .about {
     display: flex;
+    flex-grow: 3;
+    flex-shrink: 1;
     align-items: center;
     padding-left: 1em;
-    flex-shrink: 1;
     line-height: 1.3em; }
 
 /*# sourceMappingURL=main.css.map */

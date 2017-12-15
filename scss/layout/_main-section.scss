@@ -1,24 +1,28 @@
 .main{
   background-color: $black;
-  height: 40vh;
+  height: 32vh;
   display: flex;
   padding: $hero-padding;
 
   .big-words{
-    flex-basis: 187px;
+    padding-top: $big-words-y-pad;
+    padding-bottom: $big-words-y-pad;
+    flex-basis: 160px;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
     h1{
-      font-size: 2em;
+      font-size: 7vw;
     }
   }
   .about{
     display: flex;
+    flex-grow: 3;
+    flex-shrink: 1;
     align-items: center;
     padding-left: 1em;
-    flex-shrink: 1;
     line-height: 1.3em;
   }
 }

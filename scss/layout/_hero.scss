@@ -1,5 +1,8 @@
 .hero{
   background-color: $hero-bg-color;
+  background-image: url('../img/streetbattle.jpg');
+  background-size: cover;
+  background-position: 50% 30%;
   color: $white;
   padding: $hero-padding;
   height: $hero-height;
@@ -9,12 +12,23 @@
   justify-content: space-between;
   align-items: flex-start;
   overflow: hidden;
-  // padding-top: 20px;
+  padding-top: 4vh;
   *{
     z-index: 2;
   }
-  h2{
-    font-size: 2.5em;
+  .descriptors{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    h2{
+      font-size: 2.3em;
+      font-weight: 200;
+      background-color: rgba(0, 0, 0, .5);
+      padding: $hero-padding / 3;
+    }
   }
   .name-display{
     align-self: flex-end;
@@ -22,8 +36,17 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     h1{
+      font-family: 'Fjalla One', sans-serif;
       text-transform: capitalize;
-      font-size: 4em;
+      font-size: 10vh;
+      margin-top: -6vh;
+      // letter-spacing: 3px;
+      // padding-left: 10px;
+      &:first-letter{
+        font-size: 1.7em;
+        font-weight: 300;
+        // letter-spacing: -2px;
+      }
     }
   }
 
@@ -32,7 +55,7 @@
     z-index: 1;
     content: '';
     height: 150vh;
-    width: 170vh;
+    width: 300vw;
     border-radius: 100%;
     background-color: rgba(130, 130, 130, 0.5);
     top: 1vh;
