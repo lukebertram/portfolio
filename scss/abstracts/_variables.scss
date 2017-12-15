@@ -7,10 +7,10 @@ $black: #111;
 //HERO
 $hero-bg-color: #555;
 $hero-padding: 0.4em;
-$hero-height: 60vh;
+$hero-height: calc(60vh - #{$hero-padding} * 2);
 
 //MAIN
-$main-height: 40vh;
+$main-height: calc(40vh - #{$hero-padding} * 2);
 
 //COMPONENTS
 $content-max-width: 1200px;

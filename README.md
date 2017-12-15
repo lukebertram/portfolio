@@ -33,9 +33,9 @@ Flag me down in class, or send me a tweetbook on facestagram if you have any tro
 
 
 
-<!-- #### Independent Project Research -->
+## Research
 
-
+The responsiveness of my website seems like it's going to be pretty dependent on the responsiveness of the various pieces of large text involved. I have heard tales of the "relative em" unit of measurement and intend to determine whether it can be used to accomplish my goals.
 
 ## Technologies Used
 

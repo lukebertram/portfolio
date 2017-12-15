@@ -2,11 +2,23 @@
   background-color: $black;
   height: 40vh;
   display: flex;
+  padding: $hero-padding;
 
   .big-words{
-    
+    flex-basis: 187px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    h1{
+      font-size: 2em;
+    }
   }
   .about{
+    display: flex;
+    align-items: center;
     padding-left: 1em;
+    flex-shrink: 1;
+    line-height: 1.3em;
   }
 }

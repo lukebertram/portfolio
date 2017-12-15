@@ -58,7 +58,7 @@ body {
   background-color: #555;
   color: ivory;
   padding: 0.4em;
-  height: 60vh;
+  height: calc(60vh - 0.4em * 2);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -76,7 +76,7 @@ body {
     justify-content: flex-end; }
     .hero .name-display h1 {
       text-transform: capitalize;
-      font-size: 5em; }
+      font-size: 4em; }
   .hero:after {
     position: absolute;
     z-index: 1;
@@ -91,8 +91,21 @@ body {
 .main {
   background-color: #111;
   height: 40vh;
-  display: flex; }
+  display: flex;
+  padding: 0.4em; }
+  .main .big-words {
+    flex-basis: 187px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end; }
+    .main .big-words h1 {
+      font-size: 2em; }
   .main .about {
-    padding-left: 1em; }
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    flex-shrink: 1;
+    line-height: 1.3em; }
 
 /*# sourceMappingURL=main.css.map */
