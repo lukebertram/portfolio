@@ -46,10 +46,53 @@ table {
   border-spacing: 0; }
 
 body {
-  background: #555; }
+  background: #777;
+  font-family: helvetica, arial, sans-serif;
+  color: ivory; }
 
 .wrapper {
   max-width: 1200px;
   margin: auto; }
+
+.hero {
+  background-color: #555;
+  color: ivory;
+  padding: 0.4em;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden; }
+  .hero * {
+    z-index: 2; }
+  .hero h2 {
+    font-size: 2.5em; }
+  .hero .name-display {
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; }
+    .hero .name-display h1 {
+      text-transform: capitalize;
+      font-size: 5em; }
+  .hero:after {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    height: 150vh;
+    width: 170vh;
+    border-radius: 100%;
+    background-color: rgba(130, 130, 130, 0.5);
+    top: 1vh;
+    left: -3vh; }
+
+.main {
+  background-color: #111;
+  height: 40vh;
+  display: flex; }
+  .main .about {
+    padding-left: 1em; }
 
 /*# sourceMappingURL=main.css.map */

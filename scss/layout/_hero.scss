@@ -1,0 +1,41 @@
+.hero{
+  background-color: $hero-bg-color;
+  color: $white;
+  padding: $hero-padding;
+  height: $hero-height;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden;
+  // padding-top: 20px;
+  *{
+    z-index: 2;
+  }
+  h2{
+    font-size: 2.5em;
+  }
+  .name-display{
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    h1{
+      text-transform: capitalize;
+      font-size: 5em;
+    }
+  }
+
+  &:after{
+    position: absolute;
+    z-index: 1;
+    content: '';
+    height: 150vh;
+    width: 170vh;
+    border-radius: 100%;
+    background-color: rgba(130, 130, 130, 0.5);
+    top: 1vh;
+    left: -3vh;
+  }
+}
