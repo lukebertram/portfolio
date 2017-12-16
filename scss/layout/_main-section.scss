@@ -3,6 +3,7 @@
   height: 32vh;
   display: flex;
   padding: $hero-padding;
+  margin-bottom: 2vh;
 
   .big-words{
     padding-top: $big-words-y-pad;
@@ -14,7 +15,7 @@
     justify-content: space-around;
     align-items: flex-end;
     h1{
-      font-size: 7vw;
+      font-size: 3em;
     }
   }
   .about{
@@ -25,5 +26,16 @@
     padding-left: 1em;
     padding-right: 1em;
     line-height: 1.3em;
+    p{
+      font-weight: 100;
+      font-size: 3vh;
+      line-height: 3.3vh;
+    }
+  }
+}
+
+@media #{$tablet} {
+  .main .big-words{
+    display: flex;
   }
 }

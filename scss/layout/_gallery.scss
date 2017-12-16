@@ -1,14 +1,15 @@
 .gallery{
   display: flex;
   flex-wrap: wrap;
-
+  padding: $hero-padding;
+  background-color: $black;
 }
 
 .gallery-item{
   width: 250px;
   flex-grow: 1;
   height: $gallery-item-height;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
   .item-img{
     position: relative;
     height: $gallery-item-height;
@@ -18,12 +19,23 @@
     background-position: center;
   }
   .item-summary{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     opacity: 0;
     height: $gallery-item-height;
     width: 100%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     transition: opacity .5s ease;
+    h2{
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
   }
   &:hover{
     .item-summary{
@@ -46,5 +58,14 @@
     .item-img{
       background-image: nth($gallery-images, $i);
     }
+  }
+}
+
+@media #{$mobile-landscape} {
+  .gallery{
+    padding: 10px 0 10px 10px;
+  }
+  .gallery-item{
+    margin-right: 10px;
   }
 }
