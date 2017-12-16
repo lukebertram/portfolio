@@ -14,6 +14,8 @@
     height: $gallery-item-height;
     width: 100%;
     background-color: honeydew;
+    background-size: cover;
+    background-position: center;
   }
   .item-summary{
     opacity: 0;
@@ -26,6 +28,23 @@
   &:hover{
     .item-summary{
       opacity: 1;
+    }
+  }
+}
+
+//gallery-items 3 & 4 display at 2x width
+.gallery-item:nth-child(3),
+.gallery-item:nth-child(4){
+  flex-grow: 2;
+  width: 500px;
+}
+//SET GALLERY IMAGES
+
+@for $i from 1 through 6
+{
+  .gallery-item:nth-child(#{$i}){
+    .item-img{
+      background-image: nth($gallery-images, $i);
     }
   }
 }
