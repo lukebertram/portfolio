@@ -123,9 +123,12 @@ body {
     justify-content: space-around;
     align-items: flex-end; }
     .main .big-words h1 {
+      color: peachpuff;
       font-size: 3em; }
   .main .about {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     flex-grow: 3;
     flex-shrink: 1;
     align-items: center;
@@ -134,8 +137,9 @@ body {
     line-height: 1.3em; }
     .main .about p {
       font-weight: 100;
-      font-size: 3vh;
-      line-height: 3.3vh; }
+      font-size: 20px; }
+    .main .about .name {
+      color: orange; }
 
 @media screen and (min-width: 768px) {
   .main .big-words {

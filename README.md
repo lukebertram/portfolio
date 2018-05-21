@@ -46,6 +46,9 @@ update: nope. No time to find out how to do it right before the 5:00pm deadline.
 
 This project uses SASS to efficiently generate the final CSS stylesheet for the webpage. The CSS styling makes use of flexbox to position elements around the page and transitions/animations to add a bit of life to interactable elements.
 
+If you would like to work on the styling of this site, I recommend using the following command to set a SASS watch that will detect changes to your SCSS files and automatically re-compile them into CSS:
+
+`$ sass --watch scss:css`
 
 ### License
 

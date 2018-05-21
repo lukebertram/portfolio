@@ -15,11 +15,14 @@
     justify-content: space-around;
     align-items: flex-end;
     h1{
+      color: peachpuff;
       font-size: 3em;
     }
   }
   .about{
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     flex-grow: 3;
     flex-shrink: 1;
     align-items: center;
@@ -28,8 +31,10 @@
     line-height: 1.3em;
     p{
       font-weight: 100;
-      font-size: 3vh;
-      line-height: 3.3vh;
+      font-size: 20px;
+    }
+    .name{
+      color: orange;
     }
   }
 }
