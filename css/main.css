@@ -149,6 +149,8 @@ body {
   flex-wrap: wrap;
   padding: 0.4em;
   background-color: #111; }
+  .gallery a {
+    color: ivory; }
 
 .gallery-item {
   width: 250px;
@@ -187,7 +189,7 @@ body {
   width: 500px; }
 
 .gallery-item:nth-child(1) .item-img {
-  background-image: url("../img/flexdice.png"); }
+  background-image: url("../img/JSDJ.png"); }
 
 .gallery-item:nth-child(2) .item-img {
   background-image: url("../img/cthulhu.png"); }

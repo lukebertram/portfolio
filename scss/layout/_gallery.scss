@@ -3,6 +3,9 @@
   flex-wrap: wrap;
   padding: $hero-padding;
   background-color: $black;
+  a{
+    color: $white;
+  }
 }
 
 .gallery-item{
