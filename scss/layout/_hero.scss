@@ -31,9 +31,11 @@
     }
   }
   .name-display{
+    width: 100%;
     align-self: flex-end;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: flex-end;
     h1{
       font-family: 'Fjalla One', sans-serif;

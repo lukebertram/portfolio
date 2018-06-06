@@ -8,12 +8,18 @@
   .big-words{
     padding-top: $big-words-y-pad;
     padding-bottom: $big-words-y-pad;
-    flex-basis: 160px;
+    // flex-basis: 500px;
     flex-grow: 1;
     display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;
+    padding-left: 100px;
+    a{
+      color: peachpuff;
+      text-decoration: none;
+      
+    }
     h1{
       color: peachpuff;
       font-size: 3em;
@@ -26,8 +32,8 @@
     flex-grow: 3;
     flex-shrink: 1;
     align-items: center;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1.5em;
+    padding-right: 100px;
     line-height: 1.3em;
     p{
       font-weight: 100;

@@ -84,9 +84,11 @@ body {
       background-color: rgba(0, 0, 0, 0.5);
       padding: 0.1333333333em; }
   .hero .name-display {
+    width: 100%;
     align-self: flex-end;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: flex-end; }
     .hero .name-display h1 {
       font-family: 'Fjalla One', sans-serif;
@@ -116,12 +118,15 @@ body {
   .main .big-words {
     padding-top: 3vh;
     padding-bottom: 3vh;
-    flex-basis: 160px;
     flex-grow: 1;
     display: none;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-end; }
+    align-items: flex-end;
+    padding-left: 100px; }
+    .main .big-words a {
+      color: peachpuff;
+      text-decoration: none; }
     .main .big-words h1 {
       color: peachpuff;
       font-size: 3em; }
@@ -132,8 +137,8 @@ body {
     flex-grow: 3;
     flex-shrink: 1;
     align-items: center;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1.5em;
+    padding-right: 100px;
     line-height: 1.3em; }
     .main .about p {
       font-weight: 100;
