@@ -1,11 +1,11 @@
-.main{
+.main {
   background-color: $black;
   min-height: 32vh;
   display: flex;
   padding: $hero-padding;
   margin-bottom: 2vh;
 
-  .big-words{
+  .big-words {
     padding-top: $big-words-y-pad;
     padding-bottom: $big-words-y-pad;
     // flex-basis: 500px;
@@ -15,17 +15,16 @@
     justify-content: space-around;
     align-items: flex-end;
     padding-left: 100px;
-    a{
+    a {
       color: peachpuff;
       text-decoration: none;
-      
     }
-    h1{
+    h1 {
       color: peachpuff;
       font-size: 3em;
     }
   }
-  .about{
+  .about {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -35,18 +34,19 @@
     padding-left: 1.5em;
     padding-right: 100px;
     line-height: 1.3em;
-    p{
+    p {
       font-weight: 100;
-      font-size: 20px;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
     }
-    .name{
+    .name {
       color: orange;
     }
   }
 }
 
 @media #{$tablet} {
-  .main .big-words{
+  .main .big-words {
     display: flex;
   }
 }

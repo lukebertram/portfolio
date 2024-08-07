@@ -1,6 +1,6 @@
-.hero{
+.hero {
   background-color: $hero-bg-color;
-  background-image: url('../img/streetbattle.jpg');
+  background-image: url("../img/streetbattle.jpg");
   background-size: cover;
   background-position: 50% 39%;
   color: $white;
@@ -13,38 +13,38 @@
   align-items: flex-start;
   overflow: hidden;
   padding-top: 4vh;
-  *{
+  * {
     z-index: 2;
   }
-  .descriptors{
+  .descriptors {
     height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
 
-    h2{
+    h2 {
       font-size: 2.3em;
       font-weight: 200;
-      background-color: rgba(0, 0, 0, .5);
-      padding: $hero-padding / 3;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: calc($hero-padding / 3);
     }
   }
-  .name-display{
+  .name-display {
     width: 100%;
     align-self: flex-end;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-end;
-    h1{
-      font-family: 'Fjalla One', sans-serif;
+    h1 {
+      font-family: "Fjalla One", sans-serif;
       text-transform: capitalize;
       font-size: 10vh;
       margin-top: -6vh;
       // letter-spacing: 3px;
       // padding-left: 10px;
-      &:first-letter{
+      &:first-letter {
         font-size: 1.7em;
         font-weight: 300;
         // letter-spacing: -2px;
@@ -52,10 +52,10 @@
     }
   }
 
-  &:after{
+  &:after {
     position: absolute;
     z-index: 1;
-    content: '';
+    content: "";
     height: 150vh;
     width: 300vw;
     border-radius: 100%;
